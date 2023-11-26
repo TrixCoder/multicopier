@@ -12,7 +12,7 @@ def on_key_event(e):
     elif e.event_type == keyboard.KEY_DOWN and keyboard.is_pressed('ctrl') and keyboard.is_pressed('b') and e.name.isdigit():
         slot_key = e.name
         pyperclip.copy(copied_texts.get(slot_key, ''))
-        keyboard.press_and_release('ctrl+b')
+        keyboard.press_and_release('ctrl+v')
 
 keyboard.hook(on_key_event)
 
