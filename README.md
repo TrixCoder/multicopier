@@ -26,8 +26,8 @@ Multicopier is a simple Python script that enables users to copy and paste multi
     - Repeat this process for other slots as needed.
 
 4. **Pasting Text:**
-    - Press `Ctrl + V + 1` to paste the text from Slot 1.
-    - Press `Ctrl + V + 2` to paste the text from Slot 2.
+    - Press `Ctrl + B + 1` to paste the text from Slot 1.
+    - Press `Ctrl + B + 2` to paste the text from Slot 2.
     - Repeat this process for other slots as needed.
 
 ## Customization
