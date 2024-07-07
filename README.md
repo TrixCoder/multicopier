@@ -1,55 +1,97 @@
-# Multicopier
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steghide Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        code {
+            font-family: Consolas, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Steghide Operations</h1>
 
-Multicopier is a simple Python script that enables users to copy and paste multiple texts using customizable keyboard shortcuts. This project utilizes the `keyboard` and `pyperclip` libraries to achieve the desired functionality.
+    <p>Steghide Operations is a bash script for performing various operations using the steghide tool. It allows users to embed, extract, and view information from files using steganography techniques.</p>
 
-## Features
+    <h2>Features</h2>
 
-- **Customizable Shortcuts:** Users can define their own keyboard shortcuts for copying and pasting texts to different slots.
-- **Multiple Slots:** The multicopier supports multiple slots (e.g., Slot 1, Slot 2, ..., Slot 10) for storing and retrieving copied texts.
-- **Clipboard Interaction:** The script interacts with the clipboard using the `pyperclip` library to ensure seamless copying and pasting.
+    <ul>
+        <li><strong>Embed Data:</strong> Embed data into a file using steghide.</li>
+        <li><strong>Extract Data:</strong> Extract hidden data from a file.</li>
+        <li><strong>View Embedded Data Information:</strong> Display information about embedded data in a file.</li>
+        <li><strong>User-friendly Interface:</strong> Simple command-line interface for interacting with steghide.</li>
+    </ul>
 
-## Usage
+    <h2>Usage</h2>
 
-1. **Install the required libraries:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+    <ol>
+        <li><strong>Clone the repository:</strong></li>
+        <pre><code>git clone https://github.com/yourusername/steghide-operations.git</code></pre>
 
-2. **Run the script:**
-    ```bash
-    python main.py
-    ```
+        <li><strong>Navigate to the project directory:</strong></li>
+        <pre><code>cd steghide-operations</code></pre>
 
-3. **Copying Text:**
-    - Press `Ctrl + C + 1` to copy the current text to Slot 1.
-    - Press `Ctrl + C + 2` to copy the current text to Slot 2.
-    - Repeat this process for other slots as needed.
+        <li><strong>Make the script executable:</strong></li>
+        <pre><code>chmod +x steghide_operations.sh</code></pre>
 
-4. **Pasting Text:**
-    - Press `Ctrl + B + 1` to paste the text from Slot 1.
-    - Press `Ctrl + B + 2` to paste the text from Slot 2.
-    - Repeat this process for other slots as needed.
+        <li><strong>Run the script:</strong></li>
+        <pre><code>./steghide_operations.sh</code></pre>
+    </ol>
 
-## Customization
+    <h3>Steghide Options</h3>
 
-Users can customize the keyboard shortcuts by modifying the `on_key_event` function in the `main.py` file. The script is designed to handle up to 10 slots, and additional slots can be added as required.
+    <p>The script prompts for different steghide operations:</p>
 
-## Requirements
+    <ul>
+        <li><strong>Embed Data into a File:</strong> Embed data into a specified file.</li>
+        <li><strong>Extract Data from a File:</strong> Extract hidden data from a specified file.</li>
+        <li><strong>View Embedded Data Information:</strong> Display information about embedded data in a specified file.</li>
+        <li><strong>Exit:</strong> Exit the steghide operations.</li>
+    </ul>
 
-```plaintext
-keyboard
-pyperclip
-```
+    <h2>Requirements</h2>
 
-## Installation
+    <p>The script requires the following dependencies:</p>
 
-Install the required libraries using the provided `requirements.txt` file:
+    <pre><code>keyboard
+pyperclip</code></pre>
 
-```bash
-pip install -r requirements.txt
-```
+    <h2>Installation</h2>
 
-## Notes
+    <p>Install the required libraries using the provided <code>requirements.txt</code> file:</p>
 
-- Ensure that the script is run in an environment where the `keyboard` library can interact with the keyboard events.
+    <pre><code>pip install -r requirements.txt</code></pre>
 
+    <h2>Notes</h2>
+
+    <ul>
+        <li>Ensure that the script is executed in an environment where steghide is properly installed and accessible via the command line.</li>
+        <li>Adjust paths and filenames as necessary to suit your specific use case.</li>
+    </ul>
+</body>
+</html>
